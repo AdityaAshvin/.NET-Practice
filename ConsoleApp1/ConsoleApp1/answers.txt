@@ -1,0 +1,165 @@
+Understanding Data Types
+
+1. What type would you choose for the following “numbers”?
+
+A person’s telephone number 
+Answer: string
+
+A person’s height
+Answer: double
+
+A person’s age
+Answer: int
+
+A person’s gender (Male, Female, Prefer Not To Answer)
+Answer: string
+
+A person’s salary
+Answer: decimal
+
+A book’s ISBN
+Answer: string
+
+A book’s price
+Answer: decimal
+
+A book’s shipping weight
+Answer: float
+
+A country’s population
+Answer: long
+
+The number of stars in the universe
+Answer: ulong
+
+The number of employees in each of the small or medium businesses in the
+United Kingdom (up to about 50,000 employees per business)
+Answer: int
+
+---------------------------------------------------------------------------------
+2. What are the difference between value type and reference type variables? What is
+boxing and unboxing?
+
+Answer: 1. Value type holds the value directly whereas reference type holds the memory address or 
+the reference of the value
+2. Value type is stored in the stack memory whereas reference type is stored in the heap memory
+3. Value type is not collected by a garbage collector whereas reference type is collected by the 
+garbage collector
+4. Value type is created by struct or enum whereas reference type is created by enum, interface or 
+array.
+5. Value type cannot be a null value whereas the reference type can have a null value.
+
+Boxing vs Unboxing:
+1. Boxing is to convert a value type to a reference or object type
+2. Unboxing is to convert a reference or object type to a value
+
+--------------------------------------------------------------------------------
+3. What is meant by the terms managed resource and unmanaged resource in .NET
+
+Answer: Managed resource is organized by the garbage collector whereas unmanged resources like 
+file transmission and DB connections are not managed by a garbage collector. They need to call 
+Dispose() method of the IDisposable interface
+
+--------------------------------------------------
+4. Whats the purpose of Garbage Collector in .NET?
+
+Answer: The main purpose of the garbage collector is to free up space and ensure better memory 
+allocation. Also, helps in developers to not worry about manually freeing up resources every time.
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+Controlling Flow and Converting Types
+
+1. What happens when you divide an int variable by 0?
+Answer: Error is thrown. It says 'Unhandled exception. System.DivideByZeroException: Attempted to 
+divide by zero'
+
+-----------------------------------------------------------------------------------
+2. What happens when you divide a double variable by 0?
+Answer: infinity is the answer given by the compiler. 
+
+-----------------------------------------------------------------------------------
+3. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+Answer: An error is shown by the ide when attempting to overflow an int variable. On running,
+the compiler says it cannot implicitly convert an int variable to long type.
+
+-----------------------------------------------------------------------------------
+4. What is the difference between x = y++; and x = ++y;?
+Answer: x = y++ is a postflix increment in which the old value of y is stored into x and then the value
+of y is incremented. Whereas x = ++y is a prefix operator in which the value of y is incremented first
+and then stored into the x variable.
+
+-----------------------------------------------------------------------------------
+5. What is the difference between break, continue, and return when used inside a loop
+statement?
+Answer: break is used to end the execution of the loop. The next line outside of the loop gets executed
+Continue is used to break out of the current loop and continue the loop with the next iterator. It 
+skips the lines of code in the loop below it.
+Return is used to return a value from the loop. it ends the execution of the function/method. 
+
+-----------------------------------------------------------------------------------
+6. What are the three parts of a for statement and which of them are required?
+Answer: 1. initialization 2. condition and 3. incrementer. All three can be omitted if used somewhere 
+else. Like the variable in the for loop can be initialized earlier. Without the condition, its an 
+infinite loop which needs to be broken by either break, continue or return statements. The incrementer
+can also be omitted if the variable is increased inside the loop. The semicolons are required or else 
+an error is thrown. 
+
+-----------------------------------------------------------------------------------
+7. What is the difference between the = and == operators?
+Answer: = is an assignment operator used to assign variables to their values or to initialize them.
+== is an equality operator which is used to compare to values. it is True if the values are equal and 
+false otherwise. 
+
+-----------------------------------------------------------------------------------
+8. Does the following statement compile? for ( ; true; ) ;
+Answer: Yes. As answered in Q6, none of the three parts are mandatory for the for loop. This code does
+not throw any error but it causes an infinite loop. 
+
+-----------------------------------------------------------------------------------
+9. What does the underscore _ represent in a switch expression?
+Answer: it is used to specify the default case in a switch expression when none of the cases match. 
+This ensures that there is some value returned by the switch statement. 
+
+-----------------------------------------------------------------------------------
+10. What interface must an object implement to be enumerated over by using the foreach
+statement?
+Answer: System.Collections.IEnumerable
+
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+Arrays and Strings
+
+1. When to use String vs. StringBuilder in C# ?
+Answer: The main difference is that StringBuilder is mutable but String is not mutable. Therefore, for 
+strings that need modifications need to use a StringBuilder type like todays goal. But String does not
+support mutation so should be used for usernames or passwords. Also, strings are thread safe but
+StringBuilder is not
+
+-----------------------------------------------------------------------------------
+2. What is the base class for all arrays in C#?
+Answer: System.Array
+
+-----------------------------------------------------------------------------------
+3. How do you sort an array in C#?
+Answer: In built function Sort() can be used. Or manual implementation of popular sort techniques like
+Bubble sort, Quick sort can be used. 
+
+-----------------------------------------------------------------------------------
+4. What property of an array object can be used to get the total number of elements in
+an array?
+Answer: Length;
+
+-----------------------------------------------------------------------------------
+5. Can you store multiple data types in System.Array?
+Answer: Yes, by using object[]
+
+-----------------------------------------------------------------------------------
+6. What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
+Answer: The main difference is that .CLone create a new array whereas .CopyTo copies the array into 
+an already existing array. Both perform a shallow copy. The Copy to needs the starting index of the 
+existing array where the new contents have to be copied to but Clone creates an entirely new array.
+
+-----------------------------------------------------------------------------------
