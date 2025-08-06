@@ -7,6 +7,8 @@ class II_Q7
     public static void Reverse()
     {
 
+        Console.WriteLine("Part 2 - Question 7 - Reverse a word");
+
         Console.WriteLine("enter a string");
         string input = Console.ReadLine()!;
 

@@ -5,6 +5,7 @@ class II_Q6
 {
     public static void Freq()
     {
+        Console.WriteLine("Part 2 - Question 6 - Most freq number");
 
         Console.WriteLine("enter space separated values");
         int[] items = Console.ReadLine()!.Split().Select(int.Parse).ToArray();

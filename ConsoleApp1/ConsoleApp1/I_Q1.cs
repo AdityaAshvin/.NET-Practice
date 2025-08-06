@@ -3,6 +3,8 @@ class I_Q1
 {
     public static void Size()
     {
+        Console.WriteLine("Part 1 - Question 1 - Size of");
+
         Console.WriteLine($"Size of sbyte is {sizeof(sbyte)}");
         Console.WriteLine($"Max value of sbyte is {sbyte.MaxValue}");
         Console.WriteLine($"Min value of sbyte is {sbyte.MinValue}");

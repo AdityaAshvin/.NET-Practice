@@ -5,6 +5,8 @@ class I_Q6
     public static void Days()
     {
 
+        Console.WriteLine("Part 1 - Question 6 - Age in days");
+
         DateTime birthdate = new DateTime(2001, 02, 16);
         DateTime today = DateTime.Now;
 

@@ -4,6 +4,7 @@ class II_Q8
 {
     public static void Reverse2()
     {
+        Console.WriteLine("Part 2 - Question 8 - Reverse words in sentence");
 
         Console.WriteLine("enter a sentence to be reversed");
         String input = Console.ReadLine()!;

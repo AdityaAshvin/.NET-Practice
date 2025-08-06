@@ -4,6 +4,8 @@ class I_Q7
 {
     public static void Switch()
     {
+        Console.WriteLine("Part 1 - Question 7 - Greeting per time");
+
         DateTime time = DateTime.Now;
         Console.WriteLine(time.Hour);
 

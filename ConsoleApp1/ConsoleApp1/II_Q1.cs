@@ -4,6 +4,9 @@ class II_Q1
 {
     public static void Copying()
     {
+
+        Console.WriteLine("Part 2 - Question 1 - Copying an array");
+
         int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         int arr_len = arr.Length;
         int[] copy = new int[arr_len];

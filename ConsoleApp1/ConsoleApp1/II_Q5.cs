@@ -6,6 +6,8 @@ class II_Q5
 {
     public static void LongSeq()
     {
+        Console.WriteLine("Part 2 - Question 5 - Longest sequence");
+
         Console.WriteLine("enter space separated values");
         int[] items = Console.ReadLine()!.Split().Select(int.Parse).ToArray();
 

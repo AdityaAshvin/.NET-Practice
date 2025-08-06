@@ -4,6 +4,8 @@ class I_Q2
 {
     public static void convert()
     {
+        Console.WriteLine("Part 1 - Question 2 - Day conversion");
+
         Console.WriteLine("enter an integer value");
         int centuries = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine($"you entered this {centuries}");

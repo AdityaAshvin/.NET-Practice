@@ -5,10 +5,13 @@ class I_Q5
 
     public static void Guesser()
     {
+        Console.WriteLine("Part 1 - Question 5 - Number guesser");
+
         bool flag = true;
+        int correctNumber = new Random().Next(3) + 1;
+
         while (flag)
         {
-            int correctNumber = new Random().Next(3) + 1;
             Console.WriteLine("Guess a number");
             int guessedNumber = Convert.ToInt32(Console.ReadLine());
             if (guessedNumber < 1 || guessedNumber > 3)
@@ -27,7 +30,7 @@ class I_Q5
             {
                 Console.WriteLine("Your guess is correct");
                 flag = false;
-            }  
+            }
         }
     }
 }

@@ -5,11 +5,13 @@ class II_Q2
     public static void Looping()
     {
 
+        Console.WriteLine("Part 2 - Question 2 - Adding and removing elements from a list");
+
         string[] arr = new string[0];
 
         while (true)
         {
-            Console.WriteLine("Enter command (+ item, - item, or -- to clear)):");
+            Console.WriteLine("Enter command (+ item, - item, or _ to clear)):");
             string? input = Console.ReadLine();
 
             if (string.IsNullOrEmpty(input))
@@ -55,7 +57,9 @@ class II_Q2
             else if (firstchar == '_')
             {
                 arr = new string[0];
-                Console.WriteLine($"the array is cleared. Array = {String.Join(", ", arr)}");
+                Console.WriteLine($"the array is cleared. Array = {String.Join(", ", arr)}. Closing the program");
+
+                return;
             }
             else
             {

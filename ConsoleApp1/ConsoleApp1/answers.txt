@@ -12,7 +12,7 @@ A person’s age
 Answer: int
 
 A person’s gender (Male, Female, Prefer Not To Answer)
-Answer: string
+Answer: string / enum
 
 A person’s salary
 Answer: decimal
@@ -24,7 +24,7 @@ A book’s price
 Answer: decimal
 
 A book’s shipping weight
-Answer: float
+Answer: float / double
 
 A country’s population
 Answer: long
@@ -154,7 +154,7 @@ Answer: Length;
 
 -----------------------------------------------------------------------------------
 5. Can you store multiple data types in System.Array?
-Answer: Yes, by using object[]
+Answer: It is possible by using object[] which can store multiple data types. 
 
 -----------------------------------------------------------------------------------
 6. What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?

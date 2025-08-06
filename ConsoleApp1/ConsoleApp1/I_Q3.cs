@@ -4,6 +4,8 @@ class I_Q3
 {
     public static void Fizzbuzz()
     {
+        Console.WriteLine("Part 1 - Question 3 - Fizzbuzz");
+
         for (int i = 0; i < 100; i++)
         {
             if (i % 3 == 0 && i % 5 == 0)

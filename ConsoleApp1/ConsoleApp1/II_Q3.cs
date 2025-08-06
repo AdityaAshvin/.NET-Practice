@@ -4,6 +4,8 @@ class II_Q3
 {
     public static int[] FindPrimesInRange(int startNum, int endNum)
     {
+        Console.WriteLine("Part 2 - Question 3 - Prime numbers in range");
+
         int[] primes = new int[0];
 
         for (int i = startNum; i <= endNum; i += 1)
